@@ -6,8 +6,12 @@ import org.springframework.stereotype.Repository;
 
 public interface OrderRepository {
     ArrayList<Order> getOrders();
+
     Order getOrderById(Long orderId);
-    Order addOrder(Order order) ;
+
+    Order addOrder(Order order);
+
     Order updateOrder(Long orderId, Order order);
+
     void deleteOrder(Long orderId);
 }
